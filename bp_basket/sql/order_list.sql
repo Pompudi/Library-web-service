@@ -1,0 +1,1 @@
+select ID_book, Name_book, ID_doc, Name_izd, Price from books_for_sale

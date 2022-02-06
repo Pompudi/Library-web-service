@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style = "border-style:solid;text-align: center;background-color: orange">
+        <font color = "white">
+            <h1>Добро пожаловать в рабочий кабинет</h1>
+        </font>
+    </div>
+    <div style = "text-align: center">
+    <font color  = "black">
+        <h2>Выберите запрос:</h2>
+            <p style = "margin: 30px;"><a style = "
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background: #FFA500;
+    box-shadow: 0 5px 0 #FF4500;
+" href = "{{ url_for('query.request_form1') }}">Показать названия книг, поставленных издательством ХХХ в марте 2013 года</a></p>
+            <p style = "margin: 30px;"><a style = "
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background: #FFA500;
+    box-shadow: 0 5px 0 #FF4500;
+" href = "{{ url_for('query.request_form2') }}">Показать общую сумму и колличество каждой книги, поставленной издательством *** в ХХХХ году</a></p>
+            <p style = "margin: 30px;"><a style = "
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background: #FFA500;
+    box-shadow: 0 5px 0 #FF4500;
+" href = "{{ url_for('query.request_form3') }}">Показать отчет о книгах поставленных в ХХХХ году</a></p>
+        <img src = "../static/png2.jpg" width="700px" height="400px">
+        <p style = "margin: 30px;"><a style = "
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background: #87CEEB;
+    box-shadow: 0 5px 0 #4682B4;
+" href = "{{ url_for('index') }}">На главную</a></p>
+    </font>
+    </div>
+</body>
+</html>

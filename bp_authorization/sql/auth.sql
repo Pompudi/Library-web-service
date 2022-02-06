@@ -1,0 +1,1 @@
+ select grp from auth where (log = '$log' and passw = '$passw')

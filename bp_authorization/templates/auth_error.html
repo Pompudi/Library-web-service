@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style = "text-align: center">
+    <h1>НЕ ВЕРНЫЙ ЛОГИН ИЛИ ПАРОЛЬ!</h1>
+    <li> <a href = " {{ url_for('auth.auth') }}">Повторить попытку</a></li>
+    <li> <a href = " {{ url_for('exit_session') }}">Выйти</a></li>
+</div>
+</body>
+</html>

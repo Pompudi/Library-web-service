@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="text-align: center">;
+    <h1>Общая сумма и общее количество книг поставленных
+        издательством {{ publishing }} в {{ year }} году</h1>
+    <table style="width: 300px; margin : auto">
+        {% if info %}
+            <tr>
+                {% for i in title %}
+                    <th style="background: #008B8B; color: white">{{ i }}</th>
+                {% endfor %}
+            </tr>
+        {% endif %}
+        {% for dict_item in info %}
+            <tr>
+                {% for value in dict_item.values() %}
+                    <td style="background: #485F6E; color:white">{{ value }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    <p style="margin: 30px;"><a style="
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background: #87CEEB;
+    box-shadow: 0 5px 0 #4682B4;
+" href="/request-menu">Меню запросов</a></p>
+    <p style="margin: 30px;"><a style="
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background: #87CEEB;
+    box-shadow: 0 5px 0 #4682B4;
+" href="{{ url_for('index') }}">На главную</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "director": ["auth", "form_request_menu", "request_form1","list_orders_handler", "clear_basket_handler", "buy"],
+  "secretary": ["auth", "form_request_menu", "request_form2","list_orders_handler", "clear_basket_handler", "buy"],
+  "librarian": ["auth", "form_request_menu", "request_form3"],
+  "unauthorized": ["auth"]
+}

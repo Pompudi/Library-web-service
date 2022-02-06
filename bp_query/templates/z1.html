@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style = "text-align: center">
+    <h1>Названия книг которые издательство {{ publishing }}поставляло в марте 2013 года</h1>
+        {% for i in books %}
+            <li> {{ i['Name'] }}</li>
+        {% endfor %}
+    <p style = "margin: 30px;"><a  style = "
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background: #87CEEB;
+    box-shadow: 0 5px 0 #4682B4;
+" href  = "/request-menu">Меню запросов</a></p>
+    <p style = "margin: 30px;"><a  style = "
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background: #87CEEB;
+    box-shadow: 0 5px 0 #4682B4;
+" href = "{{ url_for('index') }}">На главную</a></p>
+</div>
+</body>
+</html>

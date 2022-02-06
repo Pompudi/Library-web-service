@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <div style = "text-align: center">
+     <font color = "white">
+    <h1 style = "border-style:solid;text-align: center;background-color: #FFC0CB">Меню</h1>
+     </font>
+     <p style = "margin: 30px;"><a style = "
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 500;
+    background: #FFA500;
+    box-shadow: 0 5px 0 #FF4500" href = "{{ url_for('query.form_request_menu') }}">Работа с запросами</a></p>
+     <p style = "margin: 30px;"><a style  = "
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    font-weight: 500;
+    background: #FFA500;
+    box-shadow: 0 5px 0 #FF4500;" href = "{{ url_for('auth.auth') }} "><font color = "white">Авторизация</font></a></p>
+     <p style  = "margin: 30px;"><a style = "
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background: #FFA500;
+    box-shadow: 0 5px 0 #FF4500;
+" href = "{{ url_for('basket.list_orders_handler') }}">Корзина</a></p>
+     <p style  = "margin: 30px;"><a style = "
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background: #FFA500;
+    box-shadow: 0 5px 0 #FF4500;
+" href = "/exit">Выход</a></p>
+
+     <img src ="../static/png1.jpg" width="700px" height="400px">
+ </div>
+</body>
+</html>

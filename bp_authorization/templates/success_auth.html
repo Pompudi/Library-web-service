@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if group == "director" %}
+    <h1>Вы авторизованы как заведующая</h1>
+    {% elif group == "librarian" %}
+    <h1>Вы авторизованы как библиотекарь</h1>
+    {% else %}
+    <h1>Вы авторизованы как секретарь</h1>
+    {% endif %}
+    <a   style = "
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background: #87CEEB;
+    box-shadow: 0 5px 0 #4682B4;
+" href = "{{  url_for('index') }}">В меню</a>
+</body>
+</html>
